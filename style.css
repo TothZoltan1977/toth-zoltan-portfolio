@@ -382,25 +382,94 @@ footer {
 
 
 
+@media(max-width: 850px) {
+
+    .imagetable  {
+        width: 320px;    
+    }
+   
+
+    .imagetable img {
+        width: 200px;
+    }  
+}
 
 
 
+@media(max-width: 700px) {
+
+    .imagesector {
+        width: 300px;
+        float: auto;
+    }
+
+    .imagesector img {
+        width: 200px;
+        height: 80px;   
+    }
+
+
+    .photoshopsector {
+        width: 300px;
+    }
+
+    .photoshop {
+        width: 300px;
+        height: 150px;
+    }
+
+    .photoshop img {
+        width: 200px;
+    }
+
+    .imagetext {
+        width: 300px
+    }
+
+    
+    .footermentors img {
+        display: none;
+    }
+
+    .text-container p{
+        font-size: 14px;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    .contact-container {
+        margin-left: 20px;
+    }
+}
 
 
 
+@media(max-width: 650px) {
+    .contactlogos img {
+        width: 60px;
+    }
+    
+    .contact  {
+        width: 220px;
+    }
+    
+    .contact h1 {
+        font-size: 16px;
+    } 
+    
+    .container h1 {
+        font-size: 2rem; 
+        transition: 0.5s ease;  
+    }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
+@media(max-width: 610px) {
+    .imagetable  {
+        margin-top: 10rem;
+    }     
+}
 
 
 
@@ -449,163 +518,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-@media(max-width: 650px) {
-    .contactlogos img {
-        width: 60px;
-    }
-    
-    .contact  {
-        width: 220px;
-    }
-    
-    .contact h1 {
-        font-size: 16px;
-    } 
-    
-    .container h1 {
-        font-size: 2rem; 
-        transition: 0.5s ease;  
-    }
-}
-
-
-
-
-
-
-
-
-
-@media(max-width: 610px) {
-    .contactlogos img {
-        margin-top: 6rem;
-    }  
-}
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 700px) {
-
-    .imagesector {
-        width: 300px;
-        float: auto;
-    }
-
-    .imagesector img {
-        width: 200px;
-        height: 80px;   
-    }
-
-
-    .photoshopsector {
-        width: 300px;
-    }
-
-    .photoshop {
-        width: 300px;
-        height: 150px;
-    }
-
-    .photoshop img {
-        width: 200px;
-    }
-
-    .imagetext {
-        width: 300px
-    }
-
-    .skills {
-        flex-direction: column;
-        width: 250px;
-        height: 70vh;
-    }
-
-   
-
-    .skills li {
-        flex-direction: column;
-        font-size: 14px;
-       
-    }
-
-   
-    .skills span {
-        margin-left: 3rem; 
-    }
-
-    .skills h2 {
-        margin-right: 18rem;
-    }
-
-    
-
-
-    .footermentors img {
-        display: none;
-    }
-
-    .text-container p{
-        font-size: 14px;
-        flex-direction: column;
-        width: 200px;
-    }
-
-    .contact-container {
-        margin-left: 20px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 350px) {
-    
-    footer {
-        display: none;
-    }
-
-    .frontendmentor {
-        width: 200px;
-    }
-
-    .container h1 {
-        width: 250px;
-    }
-
-    .nav-branding {
-        font-size: 2rem;
-    }
-}
-
-
-
-
-
-
-
-
 @media(max-width: 450px) {
     
     .frontendmentor {
@@ -631,37 +543,27 @@ footer {
     .codes {
         margin-left: 3rem;
     }
-}
+}   
+  
 
 
-
-
-
-
-
-@media(max-width: 610px) {
-    .imagetable  {
-        margin-top: 10rem;
-    }     
-}
-
-
-
-
-
-
-
-
-@media(max-width: 850px) {
-
-    .imagetable  {
-        width: 320px;    
+@media(max-width: 350px) {
+    
+    footer {
+        display: none;
     }
-   
 
-    .imagetable img {
+    .frontendmentor {
         width: 200px;
-    }  
+    }
+
+    .container h1 {
+        width: 250px;
+    }
+
+    .nav-branding {
+        font-size: 2rem;
+    }
 }
 
     
@@ -670,8 +572,6 @@ footer {
 
 
 /*PHOTOSHOP SLIDE CODE */
-
-
 @keyframes myani {
     0% {background-image: url("./img/teszt\ logo\ .jpg");}
     35% {background-image: url("./img/house\ poszter.jpg");}
