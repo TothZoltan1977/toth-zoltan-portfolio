@@ -212,17 +212,17 @@ header {
 
 
 /*CONTACT */
-
 .one-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    align-items: center;
     height: 60vh;   
 }
 
 
 .contact-container {
-    font-size: 20px;
+    font-size: 22px;
     width: 40px;
     height: 12vh;
     margin-top: 2rem;
@@ -236,7 +236,7 @@ header {
 .text-container {
     width: 400px;
     height: 20vh;
-    margin-top: 1.6rem;
+    margin-top: 6rem;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
@@ -254,9 +254,6 @@ header {
     margin: 8px;
     margin-left: 20px;
 }
-
-
-
 /*CONTACT */
 
 
