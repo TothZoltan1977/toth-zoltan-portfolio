@@ -1,4 +1,7 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&family=Josefin+Sans&family=Roboto:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   margin: 0;
@@ -33,7 +36,6 @@ body {
 /*NAVMENU*/
 
 header {
-  background-color: rgb(0, 0, 0);
   font-family: "Epilogue", sans-serif;
 }
 
@@ -57,7 +59,7 @@ header {
 .navbar a {
   margin-bottom: 10px;
   margin-top: 10px;
-  color: rgb(189, 245, 245);
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -69,7 +71,7 @@ header {
 }
 
 .nav-branding {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .navbar a:hover {
@@ -77,19 +79,12 @@ header {
 }
 
 .navbar a:hover {
-  color: rgb(223, 145, 45);
+  color: #4599c0;
 }
 
 .nav-menu a:hover {
+  color: #4599c0;
   transition: 0.5s ease;
-}
-
-.nav-link {
-  transition: 0.5s ease;
-}
-
-.nav-link:hover {
-  color: rgb(223, 145, 45);
 }
 
 .hamburger {
@@ -106,7 +101,73 @@ header {
   transition: all 0.3s ease-in-out;
   background-color: rgb(255, 255, 255);
 }
+
+.hr_new hr {
+  border-top: 1px solid rgb(170, 183, 184);
+}
 /*NAVMENU*/
+
+/*myphoto*/
+
+.myphoto {
+  display: flex;
+  gap: 8rem;
+  margin-block: 5rem;
+  margin-inline: 15rem;
+  line-height: 2rem;
+}
+
+.myphoto span {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.myphoto h1 {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.myphoto p {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.myphoto li {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.myphoto img {
+  max-width: 200px;
+}
+
+.myphoto_1 h2 {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.myphoto_1 span {
+  font-size: 20px;
+}
+
+.myphoto_2 {
+  margin-inline: 16rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.myphoto_2 p {
+  font-size: 20px;
+}
+
+.myphoto_2 li {
+  font-size: 20px;
+}
+
+.myphoto_2 ul {
+  margin-bottom: rem;
+}
+
+/*myphoto*/
 
 /*IMAGETEXT*/
 .imagetext {
@@ -218,17 +279,68 @@ footer {
   font-family: "Epilogue", sans-serif;
 }
 
-.footer {
+.footer_main {
+  display: flex;
+  flex-direction: row-reverse;
+
+  justify-content: center;
+  gap: 50px;
   padding: 50px;
   margin-top: auto;
   margin: auto;
-  color: rgb(189, 245, 245);
-  max-width: 250px;
+  color: rgb(255, 255, 255);
+
   font-size: 1rem;
   line-height: 1.2cm;
   list-style: none;
 }
+
+.footer_main ul {
+  list-style-type: none;
+}
+
+.footer_icons {
+  display: block;
+}
+
+.footer_icons li img {
+  max-width: 50px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.footer_icons li img:hover {
+  background-color: rgb(185, 185, 185);
+  transition: all 0.3s ease-out;
+  max-width: 52px;
+}
+
+.footer_text {
+  color: white;
+  max-width: 400px;
+  line-height: 25px;
+}
+
+.footer_text p {
+  font-weight: normal;
+  font-size: 14px;
+}
+
 /*FOOTER*/
+
+/*MOBILE*/
+
+@media (max-width: 950px) {
+  .myphoto {
+    display: block;
+    margin-inline: 20px;
+  }
+
+  .myphoto_2 {
+    margin-inline: 20px;
+  }
+}
 
 @media (max-width: 850px) {
   .imagetable {
@@ -270,6 +382,9 @@ footer {
     display: block;
   }
 
+  .hamburger .bar {
+    background-color: #000000;
+  }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
@@ -285,7 +400,7 @@ footer {
     top: 70px;
     gap: 15px;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(196, 245, 245);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -305,6 +420,22 @@ footer {
 }
 
 @media (max-width: 350px) {
+  .myphoto img {
+    width: 120px;
+  }
+
+  .myphoto_1 span {
+    display: none;
+  }
+
+  .myphoto h1 {
+    font-size: 1rem;
+  }
+
+  .myphoto_2 h1 {
+    font-size: 1rem;
+  }
+
   .container h1 {
     width: 250px;
   }
@@ -326,10 +457,23 @@ footer {
   .skills ul {
     width: 60%;
   }
+
+  .hr_new hr {
+    display: none;
+  }
+
+  .footer_main {
+    display: block;
+  }
 }
 
 @media (max-width: 250px) {
   .contact-container {
     display: none;
   }
+
+  .footer_main {
+    gap: 10px;
+  }
 }
+/*MOBILE*/
